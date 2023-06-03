@@ -20,10 +20,6 @@ function getDataFromDB(gameId) {
   });
 }
 
-
-$(".cell").on('click', getDataFromDB);
-
-
 // Crea una nuova partita nel database
 function createNewGame() {
   const gameRef = database.ref('games').push();
